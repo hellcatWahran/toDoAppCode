@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-color: rgb(94, 89, 89);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+    font-family: monospace;
+    color: rgb(132, 240, 141);
+    letter-spacing: 5px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(86, 123, 124);
+    padding: 10px 0;
+    width: 350px;
+}
+
+.main-div{
+    background-color: rgb(163, 139, 148);
+    min-height: 600px;
+    width: 350px;
+    border: 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-div form{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.main-div form input{
+    background-color: grey;
+    padding: 10px 5px;
+    width: 250px;
+    border: 0;
+    border-radius: 10px;
+    margin-right: 5px;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: monospace;
+    color: white;
+}
+.main-div form input::placeholder{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 2px;
+    color: rgb(8, 255, 255);
+}
+.main-div form button{
+    padding: 0px 14px;
+    border: 0;
+    border-radius: 1000px;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: monospace;
+    /* letter-spacing: 2px; */
+    background-color: rgb(197, 250, 117);
+    color: black;
+}
+.main-div form button:active{
+    background-color: rgb(136, 251, 255);
+    color: white;
+}
+.item-box{
+    margin-bottom: 10px;
+}
+
+.item{
+    background-color: rgb(159, 161, 161);
+    margin-top: 10px;
+    min-height: 40px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+    border-radius: 10px;
+    box-sizing: content-box;
+}
+.item p{
+    background-color: rgb(159, 161, 161);
+    border: 1;
+    color: white;
+    font-family: monospace;
+    margin-left: 10px;
+    font-size: 14px;
+    width: 280px;
+    padding: 5px 3px;
+}
+.item button{
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+    border: 0;
+    border-radius: 100px;
+    background-color: rgb(241, 75, 75);
+    color: white;
+    font-weight: bold;
+}
+.item button:active{
+    background-color: white;
+    color: red;
+}
+
+.footer{
+    width: 100%;
+    color: rgb(8, 255, 255);
+    background-color: rgb(82, 79, 79);
+    text-align: center;
+    margin-top: 30px;
+    font-family: monospace;
+    font-size: 13px;
+    padding: 5px 0;
+    font-weight: 500;
+    letter-spacing: 5px;
+    padding-bottom: 8px;
+}
+
+@media screen and (max-width: 375px) {
+    .heading{
+        width: 320px;
+    }
+    .main-div{
+        width: 320px;
+    }
+    .main-div form input{
+        width: 220px;
+    }
+    .item{
+        width: 300px;
+    }
+    .item p{
+        width: 220px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .heading{
+        width: 300px;
+    }
+    .main-div{
+        width: 300px;
+    }
+    .main-div form input{
+        width: 200px;
+    }
+    .item{
+        width: 280px;
+    }
+    .item p{
+        width: 220px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .heading{
+        width: 550px;
+    }
+    .main-div{
+        width: 550px;
+    }
+    .main-div form input{
+        width: 440px;
+    }
+    .item{
+        width: 520px;
+    }
+    .item p{
+        width: 460px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .heading{
+        width: 750px;
+    }
+    .main-div{
+        width: 750px;
+    }
+    .main-div form input{
+        width: 630px;
+    }
+    .item{
+        width: 720px;
+    }
+    .item p{
+        width: 570px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .heading{
+        width: 260px;
+    }
+    .main-div{
+        width: 260px;
+    }
+    .main-div form input{
+        width: 170px;
+    }
+    .item{
+        width: 240px;
+    }
+    .item p{
+        width: 190px;
+    }
+    .footer{
+        letter-spacing: 2px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    button{
+        cursor: pointer;
+    }
+}
